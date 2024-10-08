@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: neelimajaya/k8snginx
         ports:
         - containerPort: 80
