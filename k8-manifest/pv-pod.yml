@@ -4,7 +4,7 @@ metadata:
   name: task-pv-pod
 spec:
   volumes:
-    -  name: task-pv-storgae
+    -  name: task-pv-storage
        persistentVolumeClaim: 
           claimName: task-pv-claim
 
