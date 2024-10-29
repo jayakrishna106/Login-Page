@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata: 
-  name: ecomm
+  name: ecomm-svc
+  namespace: qa
 
 spec:
   type: NodePort
