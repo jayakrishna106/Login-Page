@@ -1,0 +1,5 @@
+apiVesrion: v1
+kind: Namespace
+metadata:
+  name:qa
+  
