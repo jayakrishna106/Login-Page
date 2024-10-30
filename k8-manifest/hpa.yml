@@ -36,3 +36,19 @@ spec:
   - port: 80
   selector:
     run: php-apache
+
+---
+
+apiVesrion: autoscaling/v1
+kind: HorizontalPodAutoScaler
+metadata:
+  name: hpa-auto
+
+spec:
+  ScaleTargetRef:
+    apiVesrion: apps/v1
+    kind: Deployment
+    name: php-apache
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercetange: 50
