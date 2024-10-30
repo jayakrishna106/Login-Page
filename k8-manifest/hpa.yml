@@ -46,7 +46,7 @@ metadata:
 
 spec:
   ScaleTargetRef:
-    apiVesrion: apps/v1
+    apiVersion: apps/v1
     kind: Deployment
     name: php-apache
   minReplicas: 1
