@@ -39,7 +39,7 @@ spec:
 
 ---
 
-apiVesrion: autoscaling/v1
+apiVersion: autoscaling/v1
 kind: HorizontalPodAutoScaler
 metadata:
   name: hpa-auto
