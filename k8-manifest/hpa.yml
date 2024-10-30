@@ -42,13 +42,13 @@ spec:
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: php-apache
+  name: hpa-demo
 
 spec:
-  ScaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: php-apache
-  minReplicas: 1
-  maxReplicas: 10
-  targetCPUUtilizationPercentage: 50
+ ScaleTargetRef:
+   apiVersion: apps/v1
+   kind: Deployment
+   name: php-apache
+ minReplicas: 1
+ maxReplicas: 10
+ targetCPUUtilizationPercentage: 50
