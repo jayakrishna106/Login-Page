@@ -1,0 +1,23 @@
+#qa devployment file
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: ecomm
+  namespace: qa
+  labels:
+    app: ecomm
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ecomm
+  template:
+    metadata:
+      labels:
+        app: ecomm
+    spec:
+      containers:
+      - name: ecomm
+        image: neelimajaya/ecomm
+        ports:
+        - containerPort: 80
